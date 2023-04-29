@@ -6,10 +6,10 @@ public class Brute {
     /** Your code goes here */
     int Pattern = P.length();
     int text = T.length();
-    int i = 0, j = text - 1;
+    int i = 0, j = Pattern - 1;
 
-    for (i = 0, j = text - 1; j < Pattern;) {
-        if (T.equals(P.substring(i, j + 1))) {
+    for (i = 0, j = Pattern - 1; j < text;) {
+        if (P.equals(T.substring(i, j + 1))) {
             return i;
         }
         i++;
