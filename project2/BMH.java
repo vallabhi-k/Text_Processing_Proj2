@@ -8,12 +8,15 @@ public class BMH {
     /** Your code goes here */
     int m=P.length();
     int n=T.length();
+    T = T.toLowerCase();
+    P = P.toLowerCase();
     int lastOccurence[] = new int[m];
     HashMap<Character,Integer> hm=new HashMap<>();
 
     char pat[] = P.toCharArray();
     for(int x=0;x<m;x++)
     {
+      // System.out.println(pat[x]+" : : "+x);
       hm.put(pat[x],x);
     } 
     // System.out.print("temp");
