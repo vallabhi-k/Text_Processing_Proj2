@@ -46,7 +46,7 @@ public class BMH {
       {
         // System.out.print("entered else");
         int temp=-1;
-        if(hm.containsKey(T.charAt(i))) temp=lastOccurence[hm.get(T.charAt(i))];
+        if(hm.containsKey(T.charAt(i))) temp=hm.get(T.charAt(i));
       //  System.out.println(temp);
         i = i + m - Math.min(j, 1 + temp);
         j = m - 1;
