@@ -14,8 +14,9 @@ public class BMH {
     char pat[] = P.toCharArray();
     for(int x=0;x<m;x++)
     {
-      hm.put(pat[x],m-1-x);
+      hm.put(pat[x],x);
     } 
+    
     int i,j;
     i = m - 1;
     j = m - 1;
@@ -37,8 +38,7 @@ public class BMH {
         int temp=m;
         if(hm.containsKey(T.charAt(i)))
           temp=lastOccurence[hm.get(T.charAt(i))];
-        int  l = temp;
-        i = i + m - Math.min(j, 1 + l);
+        i = i + m - Math.min(j, 1 + temp);
         j = m - 1;
       }
     }
